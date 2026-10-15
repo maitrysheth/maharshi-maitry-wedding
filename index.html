@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#42121e">
+  <meta name="description" content="Join us to celebrate Maharshi and Maitry, 15–17 November 2026, in Surat, Gujarat.">
+  <title>Maharshi &amp; Maitry — A Royal Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js-enabled");</script>
+</head>
+<body class="intro-active">
+
+  <!-- ROYAL PALACE INTRO -->
+  <div class="royal-intro" id="royal-intro" aria-label="Wedding invitation opening">
+    <div class="intro-particles" aria-hidden="true"></div>
+    <div class="palace-door palace-door-left" aria-hidden="true"><div class="door-pattern"></div><div class="door-medallion">✦</div></div>
+    <div class="palace-door palace-door-right" aria-hidden="true"><div class="door-pattern"></div><div class="door-medallion">✦</div></div>
+    <div class="intro-center">
+      <div class="intro-ornament">✧ ❋ ✧</div>
+      <p class="intro-kicker">A celebration of love and tradition</p>
+      <h1>Maharshi <span>&amp;</span> Maitry</h1>
+      <div class="intro-divider"></div>
+      <p class="intro-date">15 — 17 November 2026</p>
+    </div>
+    <button id="skip-intro" class="skip-intro" type="button">Skip intro <span aria-hidden="true">↗</span></button>
+  </div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader" aria-label="Loading invitation">
+    <div class="loader-inner">
+      <div class="loader-monogram">M <span>&amp;</span> M</div>
+      <div class="loader-line"></div>
+      <p>Preparing your invitation</p>
+    </div>
+  </div>
+
+  <div class="petals-container" id="petals-container" aria-hidden="true"></div>
+
+  <!-- Background Music -->
+  <audio id="background-music" loop preload="metadata">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <button id="music-toggle" class="music-toggle" type="button" aria-label="Play background music" aria-pressed="false">
+    <span class="music-toggle-icon" aria-hidden="true">♫</span>
+    <span class="music-toggle-label">Play music</span>
+  </button>
+
+  <!-- NAVIGATION -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="brand" aria-label="Maharshi and Maitry home"><span class="brand-name">Maharshi <i>&amp;</i> Maitry</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#story">Our Story</a><a href="#countdown">Countdown</a>
+      <a href="#events">Celebrations</a><a href="#family">Families</a><a href="#gallery">Gallery</a>
+      <a href="#venue">Venue</a><a href="#welcome" class="nav-rsvp">You're Invited</a>
+    </nav>
+    <button id="mobile-menu-btn" class="menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a class="mobile-link" href="#home">Home</a><a class="mobile-link" href="#story">Our Story</a>
+    <a class="mobile-link" href="#countdown">Countdown</a><a class="mobile-link" href="#events">Celebrations</a>
+    <a class="mobile-link" href="#family">Families</a><a class="mobile-link" href="#gallery">Gallery</a>
+    <a class="mobile-link" href="#venue">Venue</a><a class="mobile-link" href="#welcome">You're Invited</a>
+  </nav>
+
+  <main>
+   ```html
+<!-- HERO -->
+<section class="hero" id="home">
+
+  <div class="hero-background-ornament" aria-hidden="true">
+    <svg viewBox="0 0 600 600" role="presentation">
+      <circle cx="300" cy="300" r="255"/>
+      <circle cx="300" cy="300" r="230"/>
+      <circle cx="300" cy="300" r="190"/>
+      <circle cx="300" cy="300" r="150"/>
+      <path d="M300 55 Q325 105 300 145 Q275 105 300 55Z"/>
+      <path d="M300 545 Q325 495 300 455 Q275 495 300 545Z"/>
+      <path d="M55 300 Q105 275 145 300 Q105 325 55 300Z"/>
+      <path d="M545 300 Q495 275 455 300 Q495 325 545 300Z"/>
+    </svg>
+  </div>
+
+  <div class="hero-editorial-frame" aria-hidden="true"></div>
+
+  <div class="hero-content reveal-item">
+
+    <p class="hero-kicker">Together with our families</p>
+
+    <div class="hero-lotus" aria-hidden="true">
+      <span></span> ✧ ❋ ✧ <span></span>
+    </div>
+
+    <p class="hero-overline">Joyfully invite you to celebrate</p>
+
+    <h1 class="hero-title">
+      Maharshi
+      <span class="hero-amp">&amp;</span>
+      Maitry
+    </h1>
+
+    <p class="hero-subtitle">
+      Two hearts. One beautiful forever.
+    </p>
+
+    <div class="hero-divider" aria-hidden="true">
+      <span></span> ✦ <span></span>
+    </div>
+
+    <div class="hero-date">
+      <span class="hero-date-day">15</span>
+      <span class="hero-date-month">November</span>
+      <span class="hero-date-day">17</span>
+      <span class="hero-date-year">2026</span>
+    </div>
+
+    <p class="hero-location">Surat · Gujarat · India</p>
+
+    <a class="btn btn-light hero-cta" href="#events">
+      Discover the celebrations <span aria-hidden="true">↗</span>
+    </a>
+
+    <a class="scroll-cue" href="#story" aria-label="Scroll to discover">
+      <span class="scroll-cue-text">A celebration of love</span>
+      <span class="scroll-cue-line"></span>
+    </a>
+
+  </div>
+
+  <div class="hero-couple-art">
+    <div class="hero-art-label hero-art-label-top">
+      <span>THE WEDDING CELEBRATION</span>
+    </div>
+
+    <div class="hero-arch">
+      <div class="hero-arch-inner">
+        <img
+          src="bride-groom.png"
+          alt="Bride and groom wedding illustration"
+          class="hero-couple-image"
+        >
+      </div>
+    </div>
+
+    <div class="hero-art-caption">
+      <span class="hero-caption-line"></span>
+      <span class="hero-caption-initials">M <i>&amp;</i> M</span>
+      <span class="hero-caption-line"></span>
+    </div>
+  </div>
+
+  <div class="hero-bottom-note" aria-hidden="true">
+    <span>WITH LOVE</span>
+    <span>✦</span>
+    <span>WITH BLESSINGS</span>
+  </div>
+
+</section>
+```
+    <!-- OUR STORY -->
+    <section class="story" id="story">
+      <div class="container story-grid">
+        <div class="story-art reveal-item">
+          <div class="story-art-frame" aria-hidden="true"></div>
+          <svg class="story-mandala" viewBox="0 0 400 400" role="img" aria-label="Traditional ornamental mandala">
+            <g fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="200" cy="200" r="175"/><circle cx="200" cy="200" r="155"/><circle cx="200" cy="200" r="115"/><circle cx="200" cy="200" r="75"/>
+              <g id="story-petal"><path d="M200 25 C176 58 178 83 200 103 C222 83 224 58 200 25Z"/><path d="M200 40 L200 95"/></g>
+              <use href="#story-petal" transform="rotate(30 200 200)"/><use href="#story-petal" transform="rotate(60 200 200)"/>
+              <use href="#story-petal" transform="rotate(90 200 200)"/><use href="#story-petal" transform="rotate(120 200 200)"/>
+              <use href="#story-petal" transform="rotate(150 200 200)"/><use href="#story-petal" transform="rotate(180 200 200)"/>
+              <use href="#story-petal" transform="rotate(210 200 200)"/><use href="#story-petal" transform="rotate(240 200 200)"/>
+              <use href="#story-petal" transform="rotate(270 200 200)"/><use href="#story-petal" transform="rotate(300 200 200)"/>
+              <use href="#story-petal" transform="rotate(330 200 200)"/>
+            </g>
+          </svg>
+          <div class="story-emblem"><span class="story-initials">M <i>&amp;</i> M</span><span class="story-emblem-star">✦</span><span class="story-emblem-caption">A forever begins</span><span class="story-emblem-date">17 · 11 · 2026</span></div>
+        </div>
+        <div class="story-copy reveal-item">
+          <p class="eyebrow">A little note from our hearts</p><h2>A new chapter,<br> written together.</h2>
+          <p>Some moments become memories, and some moments become the beginning of everything. We are delighted to invite you to celebrate the beautiful beginning of our forever.</p>
+          <p>Surrounded by the love of our families and the blessings of those who mean the most to us, we look forward to sharing laughter, traditions, and unforgettable moments with you.</p>
+          <div class="story-signature">With love, Maharshi &amp; Maitry</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown" id="countdown" aria-label="Countdown to the wedding">
+      <div class="countdown-decoration" aria-hidden="true">✦</div>
+      <div class="container countdown-inner">
+        <p class="eyebrow">The countdown to forever</p><h2>Our special day is getting closer</h2>
+        <div class="countdown-grid">
+          <div class="time-unit"><span class="time-number" id="days">--</span><span class="time-label">Days</span></div>
+          <div class="time-unit"><span class="time-number" id="hours">--</span><span class="time-label">Hours</span></div>
+          <div class="time-unit"><span class="time-number" id="minutes">--</span><span class="time-label">Minutes</span></div>
+          <div class="time-unit"><span class="time-number" id="seconds">--</span><span class="time-label">Seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CELEBRATIONS -->
+    <section class="events" id="events"><div class="container">
+      <div class="section-heading reveal-item"><div class="ornament"><span>✦</span></div><p class="eyebrow">The celebrations</p><h2>Five moments.<br>One unforgettable journey.</h2><p>Every tradition, every smile, every little bit of magic.</p></div>
+      <div class="event-list">
+
+        <!-- 1. Haldi Carnival -->
+        <article class="event-card event-haldi reveal-item">
+          <div class="event-art haldi-art">
+            <div class="art-hanging-marigolds" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="art-sun" aria-hidden="true"></div>
+            <img src="haldi.png" alt="Haldi Carnival" class="ceremony-img">
+            <div class="art-bottom-caption">Turmeric &amp; Marigold</div>
+          </div>
+          <div class="event-date"><span class="event-number">01</span><strong>15 Nov</strong><small>Sunday · 2026</small></div>
+          <div class="event-info"><div class="event-topline"><span class="event-icon" aria-hidden="true">❋</span><span class="event-tag">THE GOLDEN BEGINNING</span></div><h3 class="event-title">Haldi Carnival</h3><p class="event-tagline">A golden glow, a joyful beginning.</p><p class="event-description">A morning of pithi, marigolds, laughter and treasured family traditions as the festivities begin.</p><div class="event-times"><span><b>Haldi:</b> 9:00 AM</span><span><b>Lunch:</b> 12:00 PM</span></div></div>
+        </article>
+
+        <!-- 2. Sangeet Night -->
+        <article class="event-card event-sangeet reveal-item">
+          <div class="event-art sangeet-art">
+            <div class="art-night-moon" aria-hidden="true"></div>
+            <div class="art-stage-lights" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <img src="sangeet.png" alt="Sangeet Night" class="ceremony-img">
+            <div class="art-bottom-caption">Music · Garba · Jashn</div>
+          </div>
+          <div class="event-date"><span class="event-number">02</span><strong>15 Nov</strong><small>Sunday · 2026</small></div>
+          <div class="event-info"><div class="event-topline"><span class="event-icon" aria-hidden="true">♫</span><span class="event-tag">THE NIGHT OF RHYTHM</span></div><h3 class="event-title">Sangeet Night</h3><p class="event-tagline">Jhoom &amp; Jashn — let the music bring us together.</p><p class="event-description">An evening of Gujarati Garba, music, dancing and joyful celebrations with the people we love.</p><div class="event-times"><span><b>Sangeet:</b> 7:00 PM</span><span><b>Dinner:</b> 8:00 PM</span></div></div>
+        </article>
+
+        <!-- 3. Grah Shanti -->
+        <article class="event-card event-grah reveal-item">
+          <div class="event-art grah-art">
+            <div class="art-temple-glow" aria-hidden="true"></div>
+            <div class="art-hanging-bells" aria-hidden="true"><span>♢</span><span>♢</span><span>♢</span></div>
+            <img src="grah-shanti.png" alt="Grah Shanti" class="ceremony-img">
+            <div class="art-bottom-caption">Sacred Blessings</div>
+          </div>
+          <div class="event-date"><span class="event-number">03</span><strong>16 Nov</strong><small>Monday · 2026</small></div>
+          <div class="event-info"><div class="event-topline"><span class="event-icon" aria-hidden="true">ॐ</span><span class="event-tag">AUSPICIOUS BEGINNINGS</span></div><h3 class="event-title">Grah Shanti</h3><p class="event-tagline">Shubh Aarambh — a day of prayers and blessings.</p><p class="event-description">A sacred gathering for Ganesh puja, family traditions and blessings as the wedding day draws near.</p><div class="event-times"><span><b>Grah Shanti:</b> 4:00 PM</span><span><b>Dinner:</b> 7:00 PM</span></div></div>
+        </article>
+
+        <!-- 4. The Royal Arrival -->
+        <article class="event-card event-baraat reveal-item">
+          <div class="event-art baraat-art">
+            <div class="art-baraat-lights" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+            <img src="baraat.png" alt="The Royal Arrival" class="ceremony-img">
+            <div class="art-bottom-caption">The Royal Arrival</div>
+          </div>
+          <div class="event-date"><span class="event-number">04</span><strong>17 Nov</strong><small>Tuesday · 2026</small></div>
+          <div class="event-info"><div class="event-topline"><span class="event-icon" aria-hidden="true">✧</span><span class="event-tag">THE GRAND PROCESSION</span></div><h3 class="event-title">The Royal Arrival</h3><p class="event-tagline">The dhol beats, the dancing, the grand Baraat.</p><p class="event-description">Come together for a joyous groom's procession filled with music, family, dancing and festive spirit.</p><div class="event-times"><span><b>Baraat:</b> 7:00 PM</span><span><b>Celebration:</b> Music &amp; dance</span></div></div>
+        </article>
+
+        <!-- 5. Wedding Celebration -->
+        <article class="event-card event-wedding reveal-item">
+          <div class="event-art wedding-art">
+            <div class="art-mandap-glow" aria-hidden="true"></div>
+            <div class="art-wedding-flower" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <img src="wedding.png" alt="Wedding Celebration" class="ceremony-img">
+            <div class="art-bottom-caption">Two Hearts · One Promise</div>
+          </div>
+          <div class="event-date"><span class="event-number">05</span><strong>17 Nov</strong><small>Tuesday · 2026</small></div>
+          <div class="event-info"><div class="event-topline"><span class="event-icon" aria-hidden="true">♡</span><span class="event-tag">THE SACRED UNION</span></div><h3 class="event-title">Wedding Celebration</h3><p class="event-tagline">Vowed to Forever — two hearts, one sacred promise.</p><p class="event-description">A beautiful union of two souls, surrounded by blessings, cherished traditions and the love of our families.</p><div class="event-times"><span><b>Wedding:</b> 7:00 PM</span><span><b>Dinner:</b> 7:00 PM</span></div></div>
+        </article>
+
+      </div>
+    </div></section>
+
+
+<!-- FAMILIES -->
+<section class="family" id="family">
+  <div class="container">
+
+    <div class="section-heading reveal-item">
+      <div class="ornament"><span>✦</span></div>
+      <p class="eyebrow">The People Behind Our Joy</p>
+      <h2>Our Families</h2>
+      <p>Two families, one beautiful celebration.</p>
+    </div>
+
+    <div class="family-grid">
+
+      <!-- GROOM FAMILY -->
+      <article class="family-card family-photo-card reveal-item">
+        <div class="family-photo">
+          <img
+            src="images/groom.jpg"
+            alt="Groom Maharshi"
+            loading="lazy"
+          />
+
+          <div class="family-photo-overlay">
+            <span class="family-role">The Groom</span>
+            <h3>Maharshi</h3>
+
+            <div class="family-divider"></div>
+
+            <p>Sona Ashish Parekh</p>
+            <span class="family-ampersand">&amp;</span>
+            <p>Ashish Arvindlal Parekh</p>
+
+            <span class="family-blessing">
+              With love and blessings
+            </span>
+          </div>
+
+          <div class="family-photo-label">
+            <span>✦</span>
+            Groom's Family
+            <span>✦</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- BRIDE FAMILY -->
+      <article class="family-card family-photo-card reveal-item">
+        <div class="family-photo">
+          <img
+            src="images/bride.jpg"
+            alt="Bride Maitry"
+            loading="lazy"
+          />
+
+          <div class="family-photo-overlay">
+            <span class="family-role">The Bride</span>
+            <h3>Maitry</h3>
+
+            <div class="family-divider"></div>
+
+            <p>Uma Shreyash Soni</p>
+            <span class="family-ampersand">&amp;</span>
+            <p>Shreyash Bhikhubhai Soni</p>
+
+            <span class="family-blessing">
+              With love and blessings
+            </span>
+          </div>
+
+          <div class="family-photo-label">
+            <span>✦</span>
+            Bride's Family
+            <span>✦</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- INVITATION MESSAGE -->
+    <section class="message"><div class="container message-inner reveal-item">
+      <div class="script">With love,</div><div class="gold-line center-line"></div><h2>It wouldn't be the same without you.</h2>
+      <p class="message-copy">As we begin this beautiful new chapter, we would be honoured to have you by our side. Your blessings, laughter, and presence will make these precious moments even more meaningful.</p>
+      <div class="message-signoff">Maharshi &amp; Maitry</div>
+    </div></section>
+
+    <!-- GALLERY
+    <section class="gallery" id="gallery"><div class="container">
+      <div class="section-heading reveal-item"><div class="ornament"><span>✦</span></div><p class="eyebrow">Moments to cherish</p><h2>A little wedding magic</h2><p>Traditions we love, memories we'll keep forever.</p></div>
+      <div class="gallery-grid">
+        <article class="gallery-tile gallery-animate reveal-item"><div class="gallery-tile-content"><div class="tile-icon" aria-hidden="true">❋</div><h3>Haldi Carnival</h3><p>Golden moments · joyful beginnings</p></div></article>
+        <article class="gallery-tile gallery-animate reveal-item"><div class="gallery-tile-content"><div class="tile-icon" aria-hidden="true">♫</div><h3>Jhoom &amp; Jashn</h3><p>Music · laughter · celebration</p></div></article>
+        <article class="gallery-tile gallery-animate reveal-item"><div class="gallery-tile-content"><div class="tile-icon" aria-hidden="true">✧</div><h3>Vowed to Forever</h3><p>One promise · a lifetime of love</p></div></article>
+      </div>
+    </div></section> -->
+
+    
+
+<!-- COUPLE PHOTO GALLERY -->
+<section class="couple-gallery" id="couple-gallery">
+  <div class="couple-gallery-inner">
+
+    <header class="couple-gallery-heading">
+      <span class="couple-gallery-ornament" aria-hidden="true">✦</span>
+      <p class="eyebrow">Two Hearts, One Beautiful Journey</p>
+      <h2>Maharshi <span>&amp;</span> Maitry</h2>
+      <p class="couple-gallery-subtitle">
+        A collection of moments, a lifetime of memories.
+      </p>
+      <div class="couple-gallery-divider"></div>
+    </header>
+
+    <div class="couple-gallery-list">
+
+      <figure class="couple-gallery-item">
+        <img
+          src="images/maharshi_maitri.jpg"
+          alt="Maharshi and Maitry — photograph 1"
+          loading="lazy"
+        />
+        <figcaption>Two Hearts, One Journey</figcaption>
+      </figure>
+
+      <figure class="couple-gallery-item">
+        <img
+          src="images/maharshi_maitri_2.jpg"
+          alt="Maharshi and Maitry — photograph 2"
+          loading="lazy"
+        />
+        <figcaption>A Beautiful Beginning</figcaption>
+      </figure>
+
+      <figure class="couple-gallery-item">
+        <img
+          src="images/maharshi_maitri_3.jpg"
+          alt="Maharshi and Maitry — photograph 3"
+          loading="lazy"
+        />
+        <figcaption>Moments to Treasure</figcaption>
+      </figure>
+
+      <figure class="couple-gallery-item">
+        <img
+          src="images/maharshi_maitri_4.jpg"
+          alt="Maharshi and Maitry — photograph 4"
+          loading="lazy"
+        />
+        <figcaption>Our Favourite Chapter</figcaption>
+      </figure>
+
+      <figure class="couple-gallery-item">
+        <img
+          src="images/maharshi_maitri_5.jpg"
+          alt="Maharshi and Maitry — photograph 5"
+          loading="lazy"
+        />
+        <figcaption>Forever Begins Here</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- VENUE -->
+    <section class="venue" id="venue"><div class="container">
+      <div class="section-heading reveal-item"><div class="ornament"><span>✦</span></div><p class="eyebrow">Where we meet</p><h2>The Wedding Venue</h2><p>We look forward to welcoming you.</p></div>
+      <div class="venue-card reveal-item">
+        <div class="venue-details"><div class="venue-symbol" aria-hidden="true">⌖</div><h3>Swastik Party Plot</h3><p>Adajan Gam, Surat,<br>Gujarat 394510, India</p>
+          <div class="venue-meta"><span><b>Date:</b> 15–17 November 2026</span><span><b>Location:</b> Adajan Gam, Surat, Gujarat</span></div>
+          <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&amp;query=Swastik+Party+Plot%2C+Adajan+Gam%2C+Surat%2C+Gujarat+394510" target="_blank" rel="noopener noreferrer">View on map <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="venue-map"><div class="venue-map-inner"><div class="map-pin" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></div><p>A place to gather,<br>a memory to make.</p><a href="https://www.google.com/maps/search/?api=1&amp;query=Swastik+Party+Plot%2C+Adajan+Gam%2C+Surat%2C+Gujarat+394510" target="_blank" rel="noopener noreferrer" class="btn btn-light">Get directions ↗</a></div></div>
+      </div>
+    </div></section>
+
+    <!-- FINAL INVITATION -->
+    <section class="welcome" id="welcome"><div class="welcome-card reveal-item">
+      <div class="welcome-ornament" aria-hidden="true">✧ ❋ ✧</div><p class="eyebrow">With love &amp; joy</p><h2>We Welcome You</h2><p class="welcome-sub">To celebrate our forever</p><div class="welcome-divider"></div>
+      <h3>Maharshi <span>&amp;</span> Maitry</h3><p class="welcome-copy">Your presence will make our celebration more beautiful and our memories more special. We look forward to celebrating these precious moments with you.</p>
+      <div class="welcome-date">17 · 11 · 2026</div><p class="welcome-place">Surat · Gujarat · India</p><div class="welcome-star" aria-hidden="true">✦ ✧ ✦</div>
+      <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&amp;query=Swastik+Party+Plot%2C+Adajan+Gam%2C+Surat%2C+Gujarat+394510" target="_blank" rel="noopener noreferrer">Join the celebration ↗</a>
+    </div></section>
+  </main>
+
+  <footer class="footer"><div class="footer-ornament" aria-hidden="true">✦</div><p>MADE WITH <span class="footer-heart">♥</span> FOR MAHARSHI &amp; MAITRY</p><span class="footer-date">15 — 17 NOVEMBER 2026 · SURAT</span></footer>
+  <script src="script.js"></script>
+
+<!-- FALLING ROSE PETALS — ALL PAGES -->
+<div id="petal-background" aria-hidden="true"></div>
+</body>
+</html>
